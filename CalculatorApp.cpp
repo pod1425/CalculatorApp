@@ -2,7 +2,18 @@
 #include <Windows.h>
 using namespace std;
 
-double calculate(double a, double b, char op);
+double calculate(double a, double b, char op){
+	switch(op){
+		case '+':
+			return a + b;
+		case '-':
+			return a - b;
+		case '*':
+			return a * b;
+		case '/':
+			return a / b;
+	}
+}
 
 int main()
 {
